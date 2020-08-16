@@ -4,15 +4,13 @@ import java.util.List;
 
 public class Book {
     private String title;
-    private String subtitle;
     private List authors;
     private String publisher;
     private String publishedDate;
     private int pageCount;
 
-    public Book(String title, String subtitle, List authors, String publisher, String publishedDate, int pageCount, String thumbnail, String description) {
+    public Book(String title, List authors, String publisher, String publishedDate, int pageCount, String thumbnail, String description) {
         this.title = title;
-        this.subtitle = subtitle;
         this.authors = authors;
         this.publisher = publisher;
         this.publishedDate = publishedDate;
@@ -24,20 +22,13 @@ public class Book {
     private String thumbnail;
     private String description;
 
+
     public String getTitle() {
         return title;
     }
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getSubtitle() {
-        return subtitle;
-    }
-
-    public void setSubtitle(String subtitle) {
-        this.subtitle = subtitle;
     }
 
     public List getAuthors() {
